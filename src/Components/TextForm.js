@@ -48,16 +48,16 @@ export default function TextForm(props) {
           value={text}
           onChange={onChangeFun}
         ></textarea>
-        <button className="btn btn-primary my-3" onClick={changeToUpper}>
+        <button disabled={text.length===0} className="btn btn-primary my-3" onClick={changeToUpper}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary my-3 mx-3" onClick={changeToLower}>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={changeToLower}>
           Convert to Lowercase
         </button>
-        <button className="btn btn-primary my-3 mx-3" onClick={changeToSentense}>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={changeToSentense}>
           Convert to Sentense Case
         </button>
-        <button className="btn btn-primary my-3 mx-3" onClick={timeRead}>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={timeRead}>
           Time to read
         </button>
       </div>
