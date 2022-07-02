@@ -4,7 +4,7 @@ import TextForm from "./Components/TextForm";
 import React, { useState } from "react";
 import Alert from "./Components/Alert";
 import About from "./Components/About";
-import { BrowserRouter, Routes, Route, matchPath } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //let name = "Sid";
 function App() {
@@ -28,12 +28,6 @@ function App() {
       document.body.style.backgroundColor = "black";
       showAlert("Success!", "Enabled dark mode successfully", "success");
       document.title = "Text Utils - Dark Mode";
-      setInterval(() => {
-        document.title = "Me MC hu";
-      }, 1000);
-      setInterval(() => {
-        document.title = "Jo isme aaya";
-      }, 1500);
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
